@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu do Jogo de Cartas</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="menu">
+        <h1>Amazon The Card Game</h1>
+        <button onclick="startGame()">Começar Jogo</button> <br>
+        <button onclick="startGame()">Custom deck</button> <br>
+        <button onclick="startGame()">Options</button> <br>
+        <button onclick="exitGame()">Sair</button>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = 'index.html'; // Redireciona para a página do jogo
+        }
+
+        function exitGame() {
+            alert("Saindo do jogo!");
+            // Aqui você pode adicionar a lógica para sair do jogo
+        }
+    </script>
+</body>
+</html>

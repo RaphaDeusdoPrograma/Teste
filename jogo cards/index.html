@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yu-Gi-Oh! Duel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Seção de Pontos de Vida -->
+  <div class="life-points">
+    <div id="life-points">
+      Player LP: 4000 | Opponent LP: 4000
+    </div>
+  </div>
+
+  <!-- Campo de Jogo -->
+  <div class="duel-field">
+    <!-- Zonas de cartas do Computador -->
+    <div class="computer-area">
+      <h2>Campo do Oponente</h2>
+      <div id="computer-monster-zone" class="card-zone">Zona de Monstros</div>
+      <div id="computer-spell-zone" class="card-zone">Zona de Magias</div>
+    </div>
+
+    <!-- Zonas de cartas do Jogador -->
+    <div class="player-area">
+      <h2>Campo do Jogador</h2>
+      <div id="player-monster-zone" class="card-zone">Zona de Monstros</div>
+      <div id="player-spell-zone" class="card-zone">Zona de Magias</div>
+      <div id="player-hand-zone" class="card-zone hand-zone">Zona de Mão</div>
+    </div>
+  </div>
+
+  <!-- Seção de Informações da Carta -->
+  <div id="card-info">
+    <img id="card-image" class="card-avatar" src="" alt="Avatar da Carta">
+    <div id="card-name">Selecione uma carta</div>
+    <div id="card-type">Atributo</div>
+    <div id="card-attack">ATK:</div>
+    <div id="card-defense">DEF:</div>
+  </div>
+
+  <!-- Seção de Resultado da Batalha -->
+  <div class="battle-result">
+    <h3>Resultado da Batalha:</h3>
+    <div id="battle-message">Escolha uma carta para iniciar o duelo.</div>
+  </div>
+
+  <!-- Controles de Jogo -->
+  <div class="game-controls">
+    <button id="next-duel">Próxima Fase</button>
+  </div>
+
+  <!-- Áudio -->
+  <audio id="bgm" src="./src/assets/audios/bgm.mp3" loop></audio>
+  <button id="audio-player" class="audio-button">Ativar/Desativar BGM</button>
+
+  <script src="codigo.js"></script>
+</body>
+</html>
+
+
+
